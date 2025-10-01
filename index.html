@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/svg+xml" href="/soundscape-generator.svg"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>soundscape-generator</title>
+  <link rel="stylesheet" type="text/css" href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.19.0/maps/maps.css">
+</head>
+<body>
+<div id="app"></div>
+<script type="module" src="/src/js/main.ts"></script>
+<script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.19.0/maps/maps-web.min.js"></script>
+<div class="container">
+  <div class="main-section">
+    <h1 class="main-section__header">soundscape-generator</h1>
+    <div class="main-section__subheader">Генератор звукового ландшафта представляет данные о погоде для точки на карте как характеристики звуковой волны</div>
+    <div class="main-section__map" id="map"></div>
+    <div class="main-section__coords">
+      Координаты: <span id="coords"></span>
+    </div>
+    <div class="main-section__data" id="data"></div>
+    <div class="main-section__image">
+      <img id="image" src="" alt="">
+    </div>
+    <div class="main-section__audio" id="audio"></div>
+    <button class="btn" id="play-btn">PLAY</button>
+    <button class="btn" id="stop-btn">STOP</button>
+  </div>
+</div>
+</body>
+</html>
